@@ -1,0 +1,281 @@
+body {
+  background: rgb(245, 244, 244);
+}
+
+.logo {
+  width: 100%;
+}
+
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.mediaa {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 0 0;
+}
+
+.title-title {
+  font-family: geomanist, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-size: 30px;
+  color: rgba(38, 41, 58, .8);
+  letter-spacing: .2px;
+  line-height: 52px;
+  font-weight: 800;
+}
+
+.logo-writer {
+  color: rgb(173, 171, 171);
+  font-size: 10px;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  position: relative;
+  list-style: none;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, .7);
+  font-family: geomanist, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  letter-spacing: .2px;
+  display: block;
+  padding: 12px 20px;
+  line-height: 24px;
+}
+
+.navv:hover,
+.navv {
+  color: #fff;
+  font-weight: 500;
+  background: rgba(255, 255, 255, .06);
+}
+
+.nav-hover:hover {
+  color: #fff;
+  font-weight: 500;
+  background: rgba(255, 255, 255, .06);
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: #26293a;
+  width: 260px;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 260px);
+  z-index: 15;
+  height: 70px;
+  padding: 0 40px;
+  background: #26293a;
+}
+
+.search-bar .search-input {
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: 0 0;
+  font-size: 22px;
+}
+
+
+/* Wrapper */
+
+.wrapper {
+  margin-top: 70px;
+  margin-left: 260px;
+}
+
+
+/* Cover */
+
+.cover {
+  min-height: 300px;
+  background-image: url(./cover.png);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.6);
+  position: relative;
+  background-attachment: fixed;
+}
+
+.cover .inner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+.font {
+  font-size: 3em;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.font1 {
+  font-family: 'Bokor';
+}
+
+.font2 {
+  font-size: 11px;
+}
+
+.ul ul li {
+  display: inline-block;
+  padding: 7px 7px;
+  color: rgba(38, 41, 58, .6);
+  font-size: 15px;
+  margin: 0 20px;
+  background: rgb(245, 244, 244);
+}
+
+.ul ul li span {
+  margin-left: 10px;
+  font-size: 0.9rem
+}
+
+.span-color {
+  color: rgb(129, 126, 126);
+}
+
+
+/* card */
+
+.card-title {
+  font-family: geomanist, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(38, 41, 58, .8);
+  margin: 20px 0 10px;
+}
+
+.post-desc {
+  color: rgba(105, 106, 107, 0.8);
+  font-size: 12px;
+}
+
+.card-body .post-desc p {
+  margin-left: 22px;
+  color: rgba(38, 41, 58, .6);
+}
+
+.title-bullet {
+  margin: 10px!important;
+  font-size: 15px;
+}
+
+.card-body .post-desc span a {
+  color: #8f46c9;
+}
+
+.card-body .post-desc span a:hover {
+  text-decoration: none;
+}
+
+.card-body .post-desc .Todd {
+  color: #8f46c9;
+}
+
+.card-body .post-desc .Todd:hover {
+  text-decoration: none;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 2px 8px rgba(38, 41, 58, .1);
+  box-shadow: 0 2px 8px rgba(38, 41, 58, .1);
+}
+
+.a:hover {
+  text-decoration: none;
+}
+
+.article p {
+  font-family: Charter-Roman;
+  font-size: 16.2px;
+  color: rgba(38, 41, 58, .8);
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+.card__content-quote {
+  font-size: 14px;
+  color: rgba(38, 41, 58, .8);
+  line-height: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.color {
+  color: rgb(124, 122, 122);
+}
+
+@media only screen and (max-width: 980px) {
+  .header {
+    width: 100%;
+    position: static;
+    padding-bottom: 0;
+  }
+  .nav ul li {
+    display: inline-block;
+  }
+  .search-bar {
+    position: static;
+    width: 100%;
+  }
+  .wrapper {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .font {
+    font-size: 2em;
+    font-weight: 480;
+  }
+}

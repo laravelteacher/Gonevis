@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Bokor' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <div class="media">
+        <img src="holly.jpg" width="48" height="48" class="rounded-circle">
+
+        <div class="media-body ml-3">
+          <h5 class="text-white">alireza M</h5>
+          <h6 class="text-white logo-writer">Founder @ Ultimate Courses</h6>
+        </div>
+      </div>
+
+
+      <nav class="nav" role="navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link navv nav-link--active" href="">Blogs</a> </li>
+          <li class="nav-item"><a class="nav-link nav-hover nav-link--active" href="">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover nav-link--active" href="">Speaking</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover nav-link--active" href="">Courses</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- Search bar -->
+  <div class="search-bar">
+    <form class="search">
+      <input type="search" class="search-input" id="" placeholder="search">
+    </form>
+  </div>
+  <!-- Main content -->
+  <div class="wrapper">
+    <!-- Cover -->
+    <div class="cover text-center">
+      <div class="inner">
+        <div>
+          <img class="rounded-circle" width="48" height="48" src="data:image/png;base64,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"
+            alt>
+        </div>
+        <!-- Blog info -->
+        <div class="blog-info">
+          <h1 class="font">The best place to learn Angular</h1>
+          <h4>This is just a description</h4>
+        </div>
+      </div>
+    </div>
+    <!-- logo small -->
+    <div class="ul my-5">
+      <ul class="text-center">
+        <li><img src="holly.jpg" width="48" height="48" class="rounded-circle"><span>Angular</li>
+        <li><img src="download.jpg" width="48" height="48" class="rounded-circle"><span>NGRX</span></li>
+        <li><img src="download (1).jpg" width="48" height="48" class="rounded-circle"><span>TypeScript</span></li>
+        <li><img src="download (2).jpg" width="48" height="48" class="rounded-circle"><span>AngularJs</span></li>
+        <li><img src="download (3).jpg" width="48" height="48" class="rounded-circle"><span>JavaScript</span></li>
+      </ul>
+    </div>
+
+
+
+    <div class="container-fluid">
+      <div class="px-4">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <a href="entry_list1.html" class="a">
+              <div class="card">
+                <div class="card-body">
+                  <img src="holly.jpg" width="48" height="48" class="rounded-circle"><span class="small span-color px-2">dec 23, 2018</span>
+                  <h2 class="card-text card-title">NGRX Store: Understanding State Selectors</h2>
+                  <p class="post-desc">
+                    Selectors are pure functions that take slices of state as arguments and ...
+                  </p>
+                </div>
+              </div>
+          </div>
+          </a>
+
+
+          <div class="col-md-4 mb-4">
+            <a href="entry_list1.html" class="a">
+              <div class="card">
+                <div class="card-body">
+                  <img src="download.jpg" width="48" height="48" class="rounded-circle"><span class="small span-color px-2">sep 03, 2018</span>
+                  <h2 class="card-text card-title">Classes vs Interfaces in TypeScript</h2>
+                  <p class="post-desc">
+                    Classes and interfaces are powerful structures that facilitate not just ...
+                  </p>
+                </div>
+              </div>
+          </div>
+          </a>
+
+          <div class="col-md-4 mb-4">
+            <a href="entry_list1.html" class="a">
+              <div class="card">
+                <div class="card-body">
+                  <img src="download (1).jpg" width="48" height="48" class="rounded-circle"><span class="small span-color px-2">jul 12, 2018</span>
+                  <h2 class="card-text card-title">Handling Observables with NgIf and the Async Pipe</h2>
+                  <p class="post-desc">
+                    Dealing with async operations with the async pipe takes care of subscrib...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <a href="entry_list1.html" class="a">
+              <div class="card">
+                <div class="card-body">
+                  <img src="download (2).jpg" width="48" height="48" class="rounded-circle"><span class="small span-color px-2">jun 20, 2018</span>
+                  <h2 class="card-text card-title">NGRX Store: Actions versus Action Creators</h2>
+                  <p class="post-desc">
+                    Actions in the Redux paradigm are the initiators of the one-way dataflow...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <a href="entry_list1.html" class="a">
+              <div class="card">
+                <div class="card-body">
+                  <img src="download (3).jpg" width="48" height="48" class="rounded-circle"><span class="small span-color px-2">apr 29, 2018</span>
+                  <h2 class="card-text card-title">Step by Step Custom Pipes in Angular</h2>
+                  <p class="post-desc">
+                    Angular has many Pipes built-in, but they only take us so far. Ideally w...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <a href="entry_list1.html" class="a">
+              <div class="card">
+                <div class="card-body">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAA81BMVEX/1mf/4or/1mj/12n/2Gz/twD/2nL/2W//4IT/23b/3n//3XsuAAD/uQD/5owfAAAbAAAnAAAkAADl1oMsCgbkpxj4uQ5lRRI5Ggz/vQD/8JLbxX8UAAAqAADbnxgpCwm1hhmhYQvskQDvmwCAaU0AAAA3ExUMAACcf1IzGgzXoxV/Vhf/wwmSeVDIsHHBp2pDJh9YQCzny31IKg9KLw1+Ww2jcxe2mGNwW0AoAAouFAupj1w6HhunexfurQu+dgx5RwuQclPJkxhdPBHUgwdwThGIUQxKMCRdMAhPKQf/xT32pgJnOAU7Iw39ykuGWQY7DwHcXLBmAAAGZElEQVRoge2aCVPbRhTHUbBsQ6SVVo0EsiVwTYw5fBCckCYQN61DIQk5vv+n6Z7aQ/Khw5nOVH8YYBjP/Pb/9u3uk/bt7NSqVatWrVq1atX6f+hZln4xeRfpGf76VSMQ2JS2PQKV3GBKD2DL6EZaW+ULdAY5zd8Om5Na6JuK/K3wK8arthm11cRCv+gQtkVXbAuuJJ1fHZyxEzTB7e2h7z38M8Wvkq6yCZhyhegIOJ1Hvmo2M431nEmMAOMT75XAJTazLZOVEVROz2IT3H4igRehrwSusxmaUttYYgQUL+a9LF1jC3RbVUJvSvSS8Ew2RxtcCj6JPLFeGRuvL8JW0RKem68CnuWb2jbSyqZXzBauAVhCZ4EvYz3F5iHntPFblW7QiZetF4WvY4NxBKcZdBr4cnFfxuacznhoxdG0Q8Zh8J+cXs76OjZAbBhbQ0wHk7urq6u7LuDzTgNfGL6GDYyxa7mLmWc5KPJgGsVx7HY1642C9I3Y98HFzIvfTQGYuJZlOQRupK3npK+POWIfBHZ48Q3GcNqZ6vDnAp7X+rL1LdgRinlom2Z44cLYmXQlOKcX3eYofAV7aEWLALEx/b0Xu2OYhjN63rNtNRvNN/L9ZGJ28AXRv3mWZ0nwrMBvTBdBz2afYfZX4tt8hukzwpbhbX2t54QvjfkZyrXHE5MqMDD9HCrwEtaloDdpouu55jz2Ta7vxndEd6ACN5j1PbHW88DlRab6HiLffRZ0rFZCV+HFrMvG0+wBmu/+iWCjaSf0c7rXadabOa2LGc8IOsm1/ompaMfYITmP9zrNejPnTsOjTitVNdFxrj31+6amL80dknXwdKrPes4dXk11BBd1C2KjXOt/1eEIH5jh0TGELyZKwudebVLU8TITxgGKufO5rwc9Ed5p4btJR4M38xQVUtQV4yTXkO++GSDQaDRiTHsUjmwzIPv8exhH3DvP91wVDXMuwcUae8LssBeEvc8/f8zp3u4//Xw6Cv0jQkdnnDcF2qTnKCq4czXqPNfQKgveBL1B5A4WIfY9dwfuYOD7NzaJvMi60vAk13muoQm3/YPg8abX+zAjZm/ue73e5Q/0TzrvxzE8nQBDqilywXfT8A5mo1zDq2z0YRHMQ6RgTpzjP8O5f37ETtgohjHOurY86Zsu9BSczjfEMcfbaviamlRk+8c3Icv5b6iaQ97bykov7BxcP7hW/PFTn2yrFxGF26FNFFL4+xlJgTD4+3UcD/8CqvMSYQfGSzf24Mc/50E4+jAgcPuix4Sz3vYPows0E35vgT95C6oKO467cXvnxg6c3b+5mbkYbs9fRw7R8JLCnfubNweHjgejVzzhimd7i9URbKldj+PIg56DjBHnc1a+WNFlQOCx5yKyE13dGuWWWtYm07m+feUMB5FF4WiWSflCC0kEt+BwMHz3xxTwPaatPrTldK4fqJ2O0Z28PfXYkv56iLxHByOyxPxD79V00gWd1MGS60zVjnP5NMcP5ODUYdl+8ukz9C5DttQO3ZcdIBcTWtRz7e2ZRRSWgPd/d499W4JLnyr4xCZKOP1MzYIfZcM14znO89XWN4TLD4s5HplWVs5L4KYK195P5KidU3W7+vZpA7iYcMl4HvjSwJ86izVhF76l59RNn5f050R1sT94hyTFFfio57pnOlywc8OXPKx1xq5zj5/Mzb6A28EMiuJNZTP4huzVdNB18XYemicE7pNawp853kNGsuU3rtP5u165knTu/0F6hPHBJdJiGENnAlIT3ijC5ldoS17JnHkuOt6Q0MlCfntweDdNswv5zqZLC6778uqFooeza8EunmwyPmPaWeTBb6oAkH2LF7+FLxtW0ZdIYufeXUrS2wq7jO+Ezqc944X3MnahnW1jehqfumIpzZYPOInOrpVUMkNL7NJ3S6m3gQyvX2u199WLrSqulnS6fpVIsW31Rq/kIlPp+m0iu0PdlyTfZYrTpKq7zIZCT9/hPk8usVuFTrL1dHZnv5caQHJ7rbErgUve5ctz5eZeRlfYNqD2iCStEpnoyrsGkhaVBsfj5hCtV6PZSrVLVNStoTfIsCaVljAs+kSSRpEq21T01iBEawk1UuhqG3TWdiZx9JZ6k1b0ZInOsOrRCV5phFOgu7tJV17laIHXRqA43hpaG0CmtgheOYJfwa1Vq1atWrVq1frv6F+Qu9yZPjniwgAAAABJRU5ErkJggg=="
+                    width="48" height="48" class="rounded-circle"><span class="small span-color px-2">dec 25, 2018</span>
+                  <h2 class="card-text card-title">Typing Arrays in TypeScript</h2>
+                  <p class="post-desc">
+                    There are many ways we can type a property to declare to TypeScript some...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
